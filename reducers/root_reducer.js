@@ -1,5 +1,5 @@
 import { combaineReducers } from 'redux';
-import { inviteReducer } from "./invite-reducer";
+import { inviteReducer } from "./invite_reducer";
 
 const rootReducer = combaineReducers({
     invite : inviteReducer
