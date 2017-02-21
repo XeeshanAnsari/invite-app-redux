@@ -4,15 +4,11 @@
   "description": "usihn firebase with redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "webpack-dev-server --inline"
+    },
   "author": "xeeshan",
   "license": "ISC",
-  "babel": {
-         
-  "presets": ["es2015", "react"]
 
-  },
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "firebase": "^3.6.9",
