@@ -1,14 +1,16 @@
 import React from 'react';
 
+
 export default class Invite extends React.Component {
 
 
-    ComponentDidMount(){
+    componentDidMount() {
         this.props.onGetInvite();
+                 
     }
 
     render() {
-        const { Host, Agenda} = this.props.invite;
+        const { host, agenda } = this.props.invite;
 
         return (
             <div className="container">

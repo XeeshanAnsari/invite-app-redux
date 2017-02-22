@@ -7,19 +7,19 @@ import Invite from '../components/invite.jsx';
 
 function mapStateToProps(state){
     return {
-        invite :state.invite
+      invite: state.invite
     };
 }
 
 function mapDispatchToProps(dispatch){
     watchGuestAddedEvent(dispatch);
     return {
-        onGetInvite : ()=> dispatch(getInvite()),
+        onGetInvite : () => dispatch(getInvite()),
         onAddToInvite:(name) => dispatch(addToInvite(name))
     };
 }
 
-const inviteContainer = connect(mapDispatchToProps,mapDispatchToProps)(Invite);
+const inviteContainer = connect(mapDispatchToProps, mapDispatchToProps)(Invite);
 
 
 export default inviteContainer;

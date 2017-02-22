@@ -5,8 +5,8 @@ import database from './database';
 export function getInvite(){
     return dispatch => {
         dispatch(getInviteRequestedAction());
-        return database.ref('/').once('value' , snap =>{
-            const invite =snap.val();
+        return database.ref('/').once('value', snap => {
+            const invite = snap.val();
             dispatch(getInviteFullfilledAction(invite))
         })
         .catch((error) => {
@@ -32,5 +32,5 @@ function getInviteFullfilledAction(invite){
     return {
         type: ActionTypes.GetInviteFullfilled,
         invite
-    }
+    };
 }

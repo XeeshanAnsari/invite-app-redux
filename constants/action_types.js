@@ -9,6 +9,6 @@ const actionTypes = {
 
       GuestAdded: 'GUEST_ADDED'
 
-}
+};
 
 export default actionTypes;
