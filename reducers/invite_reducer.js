@@ -20,6 +20,8 @@ export function inviteReducer(state = {}, action) {
       newState.guests.push(action.guest);
       return newState;
     }
+     default:
+      return state;
  
   }
 }

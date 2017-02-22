@@ -7,8 +7,8 @@ export default class Invite extends React.Component {
         this.props.onGetInvite();
     }
 
-    render(){
-        const {agenda , host} = this.props.invite;
+    render() {
+        const { Host, Agenda} = this.props.invite;
 
         return (
             <div className="container">
@@ -46,7 +46,7 @@ export default class Invite extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                     <div className="col-sm-4 col-md-2">
+                      <div className="col-sm-4 col-md-2">
                             <button
                             type="button"
                             className="btn btn-primary"

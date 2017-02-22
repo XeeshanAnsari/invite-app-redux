@@ -1,7 +1,7 @@
-import { combaineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import { inviteReducer } from "./invite_reducer";
 
-const rootReducer = combaineReducers({
+const rootReducer = combineReducers({
     invite : inviteReducer
 });
 export default rootReducer;
