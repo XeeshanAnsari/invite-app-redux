@@ -19,21 +19,21 @@ export function addToInvite(name) {
 }
 
 
-function addToInviteRequestedAction() {
+function addToInviteRequestAction() {
   return {
     type: ActionTypes.AddToInviteRequested
   };
 }
 
-function addToInviteRejectedAction() {
+function addToInviteInviteRejectedAction() {
   return {
     type: ActionTypes.AddToInviteRejected
-  }
+  };
 }
 
 function addToInviteFulfilledAction(){
     return {
         type: ActionType.AddToInviteFulfilled,
         guest
-    }
+    };
 }

@@ -30,7 +30,7 @@ function getInviteRejectedAction(){
 }
 function getInviteFullfilledAction(invite){
     return {
-        type: ActionTypes.GetInviteFullfilled,
+        type: ActionTypes.GetInviteFulfilled,
         invite
     };
 }
