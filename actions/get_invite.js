@@ -8,6 +8,7 @@ export function getInvite(){
         return database.ref('/').once('value', snap => {
             const invite = snap.val();
             dispatch(getInviteFullfilledAction(invite))
+            
         })
         .catch((error) => {
             console.log(error);

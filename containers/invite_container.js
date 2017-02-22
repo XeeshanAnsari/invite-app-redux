@@ -9,10 +9,12 @@ function mapStateToProps(state){
     return {
       invite: state.invite
     };
+    console.log(invite)
 }
 
 function mapDispatchToProps(dispatch){
     watchGuestAddedEvent(dispatch);
+    
     return {
         onGetInvite : () => dispatch(getInvite()),
         onAddToInvite: (name) => dispatch(addToInvite(name))

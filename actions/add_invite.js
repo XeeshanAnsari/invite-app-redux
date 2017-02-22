@@ -9,7 +9,8 @@ export function addToInvite(name) {
         guestsRef.push ({
             name
         })
-        .then(()=>{
+        
+        .then(() => {
             dispatch(addToInviteFulfilledAction({ name }));
         })
         .catch((error) =>{
@@ -31,7 +32,7 @@ function addToInviteInviteRejectedAction() {
   };
 }
 
-function addToInviteFulfilledAction(){
+function addToInviteFulfilledAction(guest){
     return {
         type: ActionType.AddToInviteFulfilled,
         guest

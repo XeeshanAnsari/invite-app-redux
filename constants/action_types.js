@@ -7,6 +7,7 @@ const actionTypes = {
       AddToInviteRejected: 'ADD_TO_INVITE_REJECTED',
       AddToInviteFulfilled: 'ADD_TO_INVITE_FULFILLED',
 
+      GuestAdded: 'GUEST_ADDED'
 
 };
 

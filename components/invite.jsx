@@ -43,7 +43,7 @@ export default class Invite extends React.Component {
                 <div className="bg-info meeting-form">
                     <div className="row">
                         <div className="col-sm-4 col-md-2">
-                           <b>Nmae :</b> 
+                           <b>Name :</b> 
                         </div>
                         <div className="col-sm-8 col-md-10">
                            <input  type="text"
