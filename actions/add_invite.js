@@ -10,7 +10,7 @@ export function addToInvite(name) {
             name
         })
         .then(()=>{
-            dispatch(addToInviteFulfilledAction({name}));
+            dispatch(addToInviteFulfilledAction({ name }));
         })
         .catch((error) =>{
             dispatch(addToInviteInviteRejectedAction());

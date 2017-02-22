@@ -15,11 +15,11 @@ function mapDispatchToProps(dispatch){
     watchGuestAddedEvent(dispatch);
     return {
         onGetInvite : () => dispatch(getInvite()),
-        onAddToInvite:(name) => dispatch(addToInvite(name))
+        onAddToInvite: (name) => dispatch(addToInvite(name))
     };
 }
 
-const inviteContainer = connect(mapDispatchToProps, mapDispatchToProps)(Invite);
+const inviteContainer = connect(mapStateToProps, mapDispatchToProps)(Invite);
 
 
 export default inviteContainer;
