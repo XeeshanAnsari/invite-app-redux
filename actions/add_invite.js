@@ -32,9 +32,9 @@ function addToInviteInviteRejectedAction() {
   };
 }
 
-function addToInviteFulfilledAction(guest){
+function addToInviteFulfilledAction(guests){
     return {
         type: ActionType.AddToInviteFulfilled,
-        guest
+        guests
     };
 }

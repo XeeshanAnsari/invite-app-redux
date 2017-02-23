@@ -65,9 +65,9 @@ export default class Invite extends React.Component {
                  </div>
                  <div className="meeting-list">
                      <h2>guset</h2>
-                     {gusets && gusets.length > 0 ? (
+                     {guests && guests.length > 0 ? (
                          <ul>
-                           {gusets.map((gusets , index) =>{
+                           {guests.map((guests , index) =>{
                                return (
                                    <li key={index}>
                                        {guests.name}
