@@ -59,10 +59,12 @@ export default class Invite extends React.Component {
                             onClick={() => this.props.onAddToInvite(this.state.name)}
                             >
                             I am coming!
+                            
                             </button>
                         </div>
                     </div>
                  </div>
+                 
                  <div className="meeting-list">
                      <h2>guset</h2>
                      {guests && guests.length > 0 ? (
@@ -85,7 +87,7 @@ export default class Invite extends React.Component {
 
 
             
-
+ 
         )
     }
 }

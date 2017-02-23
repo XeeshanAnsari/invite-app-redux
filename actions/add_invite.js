@@ -8,8 +8,7 @@ export function addToInvite(name) {
         const guestsRef = database.ref('/guests');
         guestsRef.push ({
             name
-        })
-        
+        })        
         .then(() => {
             dispatch(addToInviteFulfilledAction({ name }));
         })
@@ -34,7 +33,7 @@ function addToInviteInviteRejectedAction() {
 
 function addToInviteFulfilledAction(guests){
     return {
-        type: ActionType.AddToInviteFulfilled,
+        type: ActionTypes.AddToInviteFulfilled,
         guests
     };
 }
