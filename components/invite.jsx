@@ -15,8 +15,7 @@ export default class Invite extends React.Component {
     }
 
     render() {
-        const { host, agenda } = this.props.invite;
-
+           const { host, agenda,  guests } = this.props.invite;
         return (
             <div className="container">
                 <div className="well">
@@ -63,6 +62,21 @@ export default class Invite extends React.Component {
                             </button>
                         </div>
                     </div>
+                 </div>
+                 <div className="meeting-list">
+                     <h2>guset</h2>
+                     {gusets && gusets.length > 0 ? (
+                         <ul>
+                           {gusets.map((gusets , index) =>{
+                               return (
+                                   <li key={index}>
+                                       {guests.name}
+                                   </li>
+                               )
+                           })}  
+                         </ul>
+                     ) : null}
+                     
                  </div>
             </div>
 

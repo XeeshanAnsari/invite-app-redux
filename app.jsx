@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import InviteContainer from './containers/invite_container';
 import store from './store/store';
-
- 
+import  './style/main.scss'; 
 
  const main = (
    <Provider store={store}>
