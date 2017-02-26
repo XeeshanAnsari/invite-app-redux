@@ -4,7 +4,7 @@ import database from './database';
 
 
 export function watchGuestAddedEvent(dispatch){
-    database.ref('/guest').on('child_added' , (snap) => {
+    database.ref('/guests').on('child_added' , (snap) => {
         dispatch(getGuestAddedAction(snap.val()));
     });
 
